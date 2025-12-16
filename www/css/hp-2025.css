@@ -141,6 +141,7 @@
 
 .hp-2025 #section-locations .locations-grid p {
   padding: 0 18px 16px;
+  flex: 1;
 }
 
 @media screen and (max-width: 1023px) {
@@ -241,6 +242,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .hp-2025 #section-xmas-voucher img {
@@ -260,12 +262,10 @@
 }
 
 .hp-2025 #section-xmas-voucher h2 {
-  text-align: left;
   margin: 0 0 20px;
 }
-
-.hp-2025 #section-xmas-voucher p {
-  text-align: left;
+.hp-2025 #section-xmas-voucher p:last-of-type {
+  margin-bottom: 30px;
 }
 
 .hp-2025 #section-xmas-voucher .eshop-btn {
@@ -406,10 +406,10 @@
 
 .hp-2025 #section-testimonials > div {
   display: flex;
-  gap: 110px;
+  gap: 90px;
   align-items: stretch;
   flex-wrap: nowrap;
-  padding: 0 35px;
+  padding: 0 55px;
 }
 
 .hp-2025 #section-testimonials > div > div {
