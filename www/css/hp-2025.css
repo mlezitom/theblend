@@ -13,7 +13,7 @@
 .hp-2025 h2 {
     font-size: 4.8rem;
     font-weight: bolder;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
     line-height: 1.1em;
 }
 .hp-2025 p {
@@ -281,7 +281,7 @@
 }
 
 .hp-2025 #section-xmas-voucher h2 {
-  margin: 0 0 20px;
+  margin: 0 0 30px;
 }
 .hp-2025 #section-xmas-voucher p:last-of-type {
   margin-bottom: 30px;
@@ -424,7 +424,7 @@
 
 .hp-2025 #section-testimonials h2 {
   text-align: center;
-  margin: 30px 15% 85px;
+  margin: 30px 15% 55px;
 }
 
 .hp-2025 #section-testimonials > div {
@@ -569,7 +569,7 @@
   }
 
   .hp-2025 #section-zdenek-kortis h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
