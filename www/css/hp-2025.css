@@ -568,3 +568,9 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-zdenek-kortis .zdenek-kortis-text {
+    padding: 0 20px;
+  }
+}
