@@ -187,7 +187,7 @@
 /* Ensure images are side-by-side and wrap naturally on small screens */
 .hp-2025 #section-carousel .imgs {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 4px;
   align-items: stretch;
 }
@@ -201,23 +201,42 @@
   object-fit: cover;
 }
 
+/* Carousel responsive breakpoints */
+/* 4 per row on large tablets */
+@media screen and (max-width: 1200px) {
+  .hp-2025 #section-carousel .imgs img {
+    flex: 0 0 calc(25% - 3px);
+    max-width: calc(25% - 3px);
+  }
+}
+
+/* 3 per row on tablets */
 @media screen and (max-width: 1023px) {
   .hp-2025 #section-carousel {
     padding: 50px 0;
   }
   .hp-2025 #section-carousel .imgs img {
-    max-width: 50%;
-    flex-basis: 50%;
+    flex: 0 0 calc(33.333% - 2.67px);
+    max-width: calc(33.333% - 2.67px);
   }
 }
 
+/* 2 per row on small tablets */
+@media screen and (max-width: 768px) {
+  .hp-2025 #section-carousel .imgs img {
+    flex: 0 0 calc(50% - 2px);
+    max-width: calc(50% - 2px);
+  }
+}
+
+/* 1 per row on mobile */
 @media screen and (max-width: 600px) {
   .hp-2025 #section-carousel {
     padding: 40px 0;
   }
   .hp-2025 #section-carousel .imgs img {
+    flex: 0 0 100%;
     max-width: 100%;
-    flex-basis: 100%;
   }
 }
 
