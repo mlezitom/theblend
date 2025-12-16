@@ -1,0 +1,59 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>{ifset title}{include title|stripHtml} | {/ifset}Chivas: The Blend</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{$basePath}/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{$basePath}/css/admin.css">
+    {block head}{/block}
+</head>
+
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Navigace</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Chivas - The Blend</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li n:if="$user->isLoggedIn()" class="active"><a n:href="Admin:"><i class="fa fa-calendar"></i>&nbsp;Eventy</a></li>
+                <li><a n:href="Homepage:"><i class="fa fa-globe"></i>&nbsp;Na web</a></li>
+                <li n:if="$user->isLoggedIn()"><a n:href="Sign:out"><i class="fa fa-sign-out"></i>&nbsp;Odhlásit</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<br>
+<br>
+<br>
+
+<div class="container theme-showcase" role="main">
+
+    <div n:foreach="$flashes as $flash" n:class="flash, $flash->type, alert, 'alert-' . $flash->type">{$flash->message}</div>
+
+    {include content}
+
+</div>
+
+{block scripts}
+    {*<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>*}
+    {*<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>*}
+    <script src="{$basePath}/build/admin.js"></script>
+{/block}
+</body>
+</html>

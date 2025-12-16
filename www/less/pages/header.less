@@ -1,0 +1,94 @@
+header {
+  //background: url(../images/CHIVAS-TheBlend-head.jpg) no-repeat center center;
+  //background-size: cover;
+  overflow: hidden;
+  min-height: 400px;
+  @media screen and (max-width: 1399px) {
+    min-height: 28.5714286vw; // video aspect ratio * 100
+  }
+  @media @mobile {
+    min-height: 300px;
+  }
+
+  h1 {
+    z-index: 2;
+  }
+
+  h1 img {
+    max-width: 52%;
+    margin-top: 3.0rem;
+    @media screen and (max-width: 1399px) {
+      margin-top: 4vw;
+      max-width: 44vw;
+    }
+    @media @mobile {
+      margin-top: 5vw;
+    }
+    @media @mobile and (max-width: 600px)  {
+      max-width: 90vw;
+      width: 90vw;
+    }
+    @media screen and (max-width: 360px) {
+      margin-top: 20vw;
+    }
+  }
+
+  video.lo-q {
+    display: none;
+    @media screen and (max-width: 520px) {
+      left: -110vw;
+    }
+  }
+  video {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    @media @mobile {
+      &.hi-q {
+        display: none;
+      }
+      &.lo-q {
+        display: block;
+      }
+      width: auto;
+      height: 300px;
+    }
+
+  }
+}
+
+.menu-toggle {
+  display: block;
+  position: absolute;
+  top: 30px;
+  //right: calc(~"50vw - 506px");
+  right: 250px;
+  background: #fff;
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  font-size: 4rem;
+  color: #1b1b1b;
+  text-decoration: none;
+  line-height: 6rem;
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1399px) {
+    position: fixed;
+    top: .5vw;
+    right: .5vw;
+    line-height: 180%;
+    zoom: .8;
+  }
+}
+.menu-toggle:hover span, .menu-toggle.on span {
+  transform: rotate(90deg);
+  transition: all 300ms;
+}

@@ -1,0 +1,551 @@
+/*
+ * HP 2025 - Homepage 2025 styles
+ * Scoped with .hp-2025 to prevent interference with old pages
+ */
+
+/* CSS Variables */
+.hp-2025 {
+  --color-brown: #946d50;
+  --color-gray: #D2D2D2;
+}
+
+/* general */
+.hp-2025 h2 {
+    font-size: 4.8rem;
+    font-weight: bolder;
+    margin: 0 0 20px;
+    line-height: 1.1em;
+}
+.hp-2025 p {
+    font-size: 3.0rem;
+    line-height: 1.4em;
+    margin: 0 0 20px;
+}
+
+/* Section CTA */
+.hp-2025 #section-cta {
+  background: transparent;
+  padding: 60px 40px;
+  color: #282423;
+  text-align: center;
+}
+
+.hp-2025 #section-cta p {
+  font-size: 4.5rem;
+  font-weight: bolder;
+  margin: 0 0 30px;
+  line-height: 1.2em;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hp-2025 #section-cta .eshop-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  margin: 10px 5px;
+  padding: 20px 32px;
+  transition: all 400ms;
+  width: 380px;
+  max-width: calc(50% - 10px);
+  text-align: center;
+  border-radius: 6px;
+  vertical-align: top;
+}
+
+.hp-2025 #section-cta .eshop-btn:first-of-type {
+  background: #282423;
+  color: #fff;
+  border: 2px solid #282423;
+}
+
+.hp-2025 #section-cta .eshop-btn:first-of-type:hover {
+  background: #fff;
+  color: #282423;
+}
+
+.hp-2025 #section-cta .eshop-btn:last-of-type {
+  background: transparent;
+  color: #282423;
+  border: 2px solid #282423;
+}
+
+.hp-2025 #section-cta .eshop-btn:last-of-type:hover {
+  background: #282423;
+  color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-cta p {
+    font-size: 3.6rem;
+  }
+
+  .hp-2025 #section-cta .eshop-btn {
+    font-size: 2.8rem;
+    padding: 16px 30px;
+    width: 340px;
+  }
+}
+
+/* Section Locations */
+.hp-2025 #section-locations {
+  background: var(--color-brown);
+  color: #fff;
+  padding: 60px 0;
+}
+
+.hp-2025 #section-locations h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hp-2025 #section-locations .locations-grid {
+  /* Switch to CSS Grid to guarantee equal heights across rows */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  grid-auto-rows: 1fr;
+}
+
+.hp-2025 #section-locations .locations-grid > div {
+  /* Make each card fill its grid cell */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hp-2025 #section-locations .locations-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.hp-2025 #section-locations .locations-grid h3,
+.hp-2025 #section-locations .locations-grid p {
+  background: #fff;
+  color: #282423;
+  margin: 0;
+  text-align: center;
+}
+
+.hp-2025 #section-locations .locations-grid h3 {
+  padding: 16px 18px 6px;
+  font-weight: bolder;
+  font-size: 3.4rem;
+}
+
+.hp-2025 #section-locations .locations-grid p {
+  padding: 0 18px 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-locations {
+    padding: 50px 0;
+  }
+
+  .hp-2025 #section-locations .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hp-2025 #section-locations {
+    padding: 40px 0;
+  }
+
+  .hp-2025 #section-locations .locations-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+}
+
+/* Section Xmas Voucher */
+.hp-2025 #section-xmas-voucher {
+  background: var(--color-brown);
+  color: #fff;
+}
+
+/* Section Carousel */
+.hp-2025 #section-carousel {
+  background: #fff;
+  color: #282423;
+  padding: 60px 0;
+}
+
+.hp-2025 #section-carousel h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Ensure images are side-by-side and wrap naturally on small screens */
+.hp-2025 #section-carousel .imgs {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: stretch;
+}
+
+.hp-2025 #section-carousel .imgs img {
+  display: block;
+  height: auto;
+  /* 6 per row on desktop */
+  flex: 0 0 calc(100% / 6 - 3.33px);
+  max-width: calc(100% / 6 - 3.33px);
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-carousel {
+    padding: 50px 0;
+  }
+  .hp-2025 #section-carousel .imgs img {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hp-2025 #section-carousel {
+    padding: 40px 0;
+  }
+  .hp-2025 #section-carousel .imgs img {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+.hp-2025 #section-xmas-voucher > div {
+  display: flex;
+  gap: 40px;
+  align-items: stretch; /* mirror #section-abount-blend */
+}
+
+.hp-2025 #section-xmas-voucher > div > div:first-child {
+  /* image column (flipped order vs. about-blend) */
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+}
+
+.hp-2025 #section-xmas-voucher > div > div:last-child {
+  /* text column */
+  flex: 0 0 60%;
+  max-width: 52%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hp-2025 #section-xmas-voucher img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Ensure the voucher image never breaks out of its column and fills height */
+.hp-2025 #section-xmas-voucher > div > div:first-child > img {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block;
+}
+
+.hp-2025 #section-xmas-voucher h2 {
+  text-align: left;
+  margin: 0 0 20px;
+}
+
+.hp-2025 #section-xmas-voucher p {
+  text-align: left;
+}
+
+.hp-2025 #section-xmas-voucher .eshop-btn {
+  display: block;
+  width: auto;
+  text-decoration: none;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  padding: 18px 12px;
+  transition: all 300ms;
+  border-radius: 6px;
+  background: #282423;
+  color: #fff;
+  border: 2px solid #282423;
+  margin: 10px 0;
+}
+
+.hp-2025 #section-xmas-voucher .eshop-btn:hover {
+  background: #fff;
+  color: #282423;
+}
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-xmas-voucher {
+    padding: 50px 0;
+  }
+
+  .hp-2025 #section-xmas-voucher > div {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hp-2025 #section-xmas-voucher > div > div:first-child,
+  .hp-2025 #section-xmas-voucher > div > div:last-child {
+    max-width: 100%;
+    flex-basis: auto;
+  }
+
+  .hp-2025 #section-xmas-voucher h2,
+  .hp-2025 #section-xmas-voucher p {
+    text-align: center;
+  }
+
+  .hp-2025 #section-xmas-voucher .eshop-btn {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hp-2025 #section-xmas-voucher {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hp-2025 #section-cta {
+    padding: 40px 20px;
+  }
+
+  .hp-2025 #section-cta .eshop-btn {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+/* Section About Blend */
+.hp-2025 #section-about-blend {
+  background: var(--color-brown);
+  color: #fff;
+  width: 100%;
+}
+
+.hp-2025 #section-about-blend .cont {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.hp-2025 #section-about-blend .cont > div:first-child {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hp-2025 #section-about-blend .cont > div:last-child {
+  flex: 0 0 40%;
+  max-width: 40%;
+  display: flex;
+}
+
+.hp-2025 #section-about-blend h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.hp-2025 #section-about-blend p {
+  color: #fff;
+  text-align: left;
+}
+
+.hp-2025 #section-about-blend img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-about-blend .cont {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hp-2025 #section-about-blend .cont > div:first-child,
+  .hp-2025 #section-about-blend .cont > div:last-child {
+    max-width: 100%;
+  }
+}
+
+/* Section Testimonials */
+.hp-2025 #section-testimonials {
+  padding: 60px 0;
+  color: #282423;
+}
+
+.hp-2025 #section-testimonials h2 {
+  text-align: center;
+  margin: 30px 15% 85px;
+}
+
+.hp-2025 #section-testimonials > div {
+  display: flex;
+  gap: 110px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 0 35px;
+}
+
+.hp-2025 #section-testimonials > div > div {
+  background: var(--color-gray);
+  padding: 8rem 35px;
+  flex: 1 1 33.333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 3.4rem;
+}
+
+.hp-2025 #section-testimonials > div > div p {
+  margin: 0 0 12px;
+}
+
+.hp-2025 #section-testimonials > div > div p:last-child {
+  margin-top: auto;
+  font-size: 3.0rem;
+  font-weight: 600; /* semi-bold author */
+}
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-testimonials {
+    padding: 50px 0;
+  }
+
+  .hp-2025 #section-testimonials > div {
+    flex-wrap: wrap;
+  }
+
+  .hp-2025 #section-testimonials > div > div {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hp-2025 #section-testimonials {
+    padding: 40px 0;
+  }
+
+  .hp-2025 #section-testimonials > div > div {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hp-2025 #section-about-blend {
+    padding: 40px 0;
+  }
+}
+
+/* Section Zdenek Kortis */
+.hp-2025 #section-zdenek-kortis {
+  position: relative;
+  padding: 60px 0 50px;
+  color: #282423;
+  text-align: center;
+}
+
+.hp-2025 #section-zdenek-kortis::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background: #d9d9d9;
+  z-index: -1;
+}
+
+.hp-2025 #section-zdenek-kortis h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* video */
+.hp-2025 #section-zdenek-kortis .thin-full {
+  margin: 10px auto 40px;
+}
+
+.hp-2025 #section-zdenek-kortis iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  display: block;
+  border: 0;
+}
+
+/* bio row */
+.hp-2025 #section-zdenek-kortis > div:last-of-type {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hp-2025 #section-zdenek-kortis > div:last-of-type > div:first-child {
+  flex: 0 0 38%;
+  max-width: 38%;
+}
+
+.hp-2025 #section-zdenek-kortis > div:last-of-type > div:last-child {
+  flex: 1 1 62%;
+}
+
+.hp-2025 #section-zdenek-kortis img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hp-2025 #section-zdenek-kortis > div:last-of-type h2 {
+  margin-top: 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+  .hp-2025 #section-zdenek-kortis {
+    padding: 50px 0 40px;
+  }
+
+  .hp-2025 #section-zdenek-kortis > div:last-of-type {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .hp-2025 #section-zdenek-kortis > div:last-of-type > div:first-child,
+  .hp-2025 #section-zdenek-kortis > div:last-of-type > div:last-child {
+    max-width: 100%;
+    flex-basis: auto;
+  }
+
+  .hp-2025 #section-zdenek-kortis h2 {
+    margin-bottom: 20px;
+  }
+}

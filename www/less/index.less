@@ -1,0 +1,27 @@
+/*
+    Created on : 8.12.2014, 13:33:07
+    Author     : Tomáš
+*/
+@darkGreen: #004026;
+@yellow: #FEF0C3;
+
+@mobile: ~'screen and (max-width: 1023px)';
+@thin: ~'screen and (max-width: 450px)';
+
+@import '../fonts-web/stylesheet.css';
+
+@import "misc/reset.less";
+@import "pages/mixins.less";
+@import "pages/main.less";
+
+// page components
+@import "pages/header.less";
+@import "pages/ageControl.less";
+@import "pages/menu.less";
+@import "pages/carousel.less";
+@import "pages/events.less";
+@import "pages/footer.less";
+
+@import (inline) "../../bower_components/slick-carousel/slick/slick.css";
+@import (inline) "../../bower_components/slick-carousel/slick/slick-theme.css";
+@import (inline) "../../bower_components/slideout.js/index.css";

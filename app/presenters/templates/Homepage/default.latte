@@ -1,0 +1,318 @@
+{block pageClass}{/block}
+{block content}
+<header id="the-blend" class="cont cont-l">
+    <video width="600" height="400" autoplay loop muted playsinline class="lo-q">
+        <source src="{$basePath}/video/chivas_web_lq.mp4" type="video/mp4">
+        <img src="{$basePath}/images/CHIVAS-TheBlend-head.jpg" alt="">
+    </video>
+    <video width="1440" height="400" autoplay loop muted class="hi-q">
+        <source src="{$basePath}/video/chivas_web.mp4" type="video/mp4">
+        <source src="{$basePath}/video/chivas_web.ogv" type="video/ogg">
+        <source src="{$basePath}/video/chivas_web.webm" type="video/webm">
+        <img src="{$basePath}/images/CHIVAS-TheBlend-head.jpg" alt="">
+    </video>
+
+    <h1>
+        <img src="{$basePath}/images/WOW-png-transparentWHITE.png" alt="">
+        The Blend by Chivas
+    </h1>
+    <a href="javascript:void(0)" class="menu-toggle"><span>&#9776;</span></a>
+</header>
+
+<div class="cont cont-s">
+    <p>
+        Připravte se&nbsp;na&nbsp;příjemně strávený čas ve&nbsp;světě exkluzivní whisky. Na&nbsp;setkání The Blend
+        se vám otevře fascinující svět skotské whisky. Vyzkoušíte si unikátní řemeslo míchání whisky a&nbsp;připravíte si
+        jeden vzorek vlastního blendu pro&nbsp;své potěšení. Prohloubíte si znalosti o&nbsp;výrobě a&nbsp;historii
+        věhlasné skotské blended a&nbsp;singlemalt whisky a&nbsp;také se&nbsp;dozvíte mnoho zajímavostí a&nbsp;novinek od&nbsp;skutečného
+        odborníka.
+    </p>
+
+    <p>
+        <strong>
+            VYCHUTNEJTE SI TEN SPRÁVNÝ BLEND – V&nbsp;ŽIVOTĚ I&nbsp;VE SKOTSKÉ.
+        </strong>
+    </p>
+
+    {if date('Y-m-d') < '2023-12-31'}
+        <a href="https://goout.net/cs/listky/darkovy-poukaz-the-blend-whisky-workshop/xpvv/" target="_blank">
+            <img src="{$basePath}/images/840_TheBlend_970x210px__D_01.jpg" alt="" style="max-width:100%">
+        </a>
+
+        <p>
+            <strong>
+                Udělejte radost svým blízkým a&nbsp;obdarujte je zážitkem.
+            </strong>
+            <br>
+            Výhodou poukazu je, že darující nemusí vybírat termín, ten si obdarovaný pak vybere sám.
+        </p>
+    {/if}
+</div>
+
+<div class="cont cont-m">
+    <div class="carousel">
+        {foreach [5,12,28,32,38,39,41,42] as $i}
+            <img src="{$basePath}/images/carousel/the_blend_2022-{=sprintf('%02d', $i)}.jpg" alt="">
+        {/foreach}
+    </div>
+    {*<div class="carousel-nav">
+        <a>&#9670;</a>
+        <a>&#9670;</a>
+        <a class="active">&#9670;</a>
+        <a>&#9670;</a>
+        <a>&#9670;</a>
+        <a>&#9670;</a>
+        <a>&#9670;</a>
+    </div>*}
+</div>
+
+<div class="cont cont-s" id="program">
+
+    <h2>
+        Co je blend?
+    </h2>
+    <p>
+        The Blend je edukačně-degustační program pod vedením <a href="https://www.facebook.com/zdenek.kortis" target="_blank">Zdeňka Kortiše</a>, jednoho z největších českých znalců a
+        sběratelů whisky, provozovatele renomovaného olomouckého baru a&nbsp;whisky ambasadora a&nbsp;lektora společnosti
+        <a href="http://www.pernod-ricard.cz" target="_blank">Pernod Ricard</a>.
+        <br><br>
+        V průběhu dvouhodinového programu se seznámíte s&nbsp;příběhem skotské whisky, dozvíte se zajímavé informace o
+        historii, výrobě a&nbsp;portfoliu značky <a href="https://www.chivas.com/cs-cz/" target="_blank">Chivas Regal</a> a&nbsp;<a href="https://www.theglenlivet.com/en-EN" target="_blank">The Glenlivet</a>.
+        Ochutnáte několik rozmanitých druhů whisky, včetně grain nebo nakouřené whisky, ze čtyř hlavních skotských oblastí. Vše pak zúročíte
+        ve vlastní praxi – z vybraných druhů whisky si namícháte originální vzorek blended whisky a&nbsp;odnesete si jej domů.
+    </p>
+
+    <h2>
+        Varianty programu <br>
+    </h2>
+</div>
+
+<div class="cont cont-s mb-30" id="program-premium">
+    <h3>
+        The Blend Premium
+    </h3>
+
+    <div class="carousel">
+        <img src="{$basePath}/images/2025/f6b0ed49097bbd5c334ef90c72b6ce7f-xxlarge.jpg" alt="">
+        <img src="{$basePath}/images/2025/d8c5a458947dd143f70566457e67300e-xxlarge.jpg" alt="">
+        <img src="{$basePath}/images/2025/7ea9525b168b3e5d4c20faa3d4f5096b-xxlarge.jpg" alt="">
+    </div>
+
+
+    <p>
+        The Blend Premium je edukačně-degustační program, který je volným pokračováním úspěšného The Blend. Můžete se
+        těšit na ještě více elegance a&nbsp;unikátních kombinací. Čekají na vás takové legendy jako jsou například Scapa 16
+        y.o., The Glenlivet 18 y.o., Royal Salute 21 y.o. nebo výjimečný Chivas Ultis 20 y.o.
+    </p>
+    <p>
+        Kromě degustace je dvouhodinový workshop nabitý informacemi ze světa whisek – například kolik stojí nejdražší
+        lahev whisky v ČR a&nbsp;jak se taková láhev kupuje. Pomyslnou třešničkou na dortu bude vámi vytvořený unikátní blend
+        s&nbsp;přesným změřením procent alkoholu. Vlastní blend si pak odnesete domů v exkluzivní lahvičce.
+    </p>
+    <p>
+        Začínáme vždy v 18:30 welcome drinkem a&nbsp;exkluzivními canapés.
+    </p>
+    <p>
+        The Blend Premium není jen degustace – je to zážitek, který propojí vaše smysly s&nbsp;uměním mícháním whisky. Vyberte
+        si nejbližší termín a&nbsp;místo si rezervujte prostřednictvím níže uvedených odkazů či přes webové stránky <a href="https://goout.net/cs/umelci/the-blend/atgwf/" target="_blank">Goout.cz</a>
+        formou vstupenky.
+    </p>
+    <p>
+        Cena vstupenky je <strong>1 999 Kč</strong>.
+    </p>
+
+</div>
+
+<section class="city mb-30" n:foreach="$cities['premium'] as $cityName">
+    <h3 class="cont cont-s">
+        {$cityName}
+    </h3>
+    <ul class="cont cont-m">
+        {foreach $events['premium'] as $e}
+            {continueIf $cityName != $e->city}
+            <li>
+                <span>{$e->event_date->format('j.n.y')}</span>
+                <span title="{$e->address}">{$e->venue_name}</span>
+                <br>
+                <a n:class="$e->soldout ? soldout, tickets" {if $e->soldout || !$e->link_goout}title="Momentálně nedostupné"{/if} target="_blank" href="{if $e->link_goout}{$e->link_goout}{else}javascript:void(0){/if}">Info&nbsp;&amp;&nbsp;vstupenky&nbsp;&gt;</a>
+            </li>
+        {/foreach}
+    </ul>
+</section>
+
+<div class="cont cont-s mb-30 pt-50">
+    <h3>
+        The Blend Classic
+    </h3>
+
+    <div class="carousel">
+        <img src="{$basePath}/images/2025/image001.jpg" alt="">
+        <img src="{$basePath}/images/2025/image002.jpg" alt="">
+        <img src="{$basePath}/images/2025/image003.jpg" alt="">
+    </div>
+
+    <p>
+        Poznejte svět skotské whisky s&nbsp;The Blend!
+    </p>
+    <p>
+        Připravte se na nezapomenutelný večer plný příběhů, chutí a&nbsp;vůní, který vás zavede do samého srdce výroby whisky
+        - Skotska. The Blend je exkluzivní edukačně-degustační program, vedený Zdeňkem Kortišem – uznávaným whisky
+        ambasadorem, sběratelem a&nbsp;znalcem, který vás provede tím nejlepším, co svět whisky nabízí.
+    </p>
+
+    <p class="no-padding">
+        Rezervace místa zahrnuje:
+    </p>
+    <ul class="text-list">
+        <li>Občerstvení, welcome drink a&nbsp;speciální whisky pairing s&nbsp;Chivas Regal.</li>
+        <li>Dozvíte se o&nbsp;bohaté historii výroby ikonických značek jako je Royal Salute, The Glenlivet, Scapa a&nbsp;Aberlour.</li>
+        <li>Ochutnáte devět unikátních vzorků ze čtyř skotských oblastí včetně grain, cask strength i&nbsp;nakouřené whisky.</li>
+        <li>A na závěr si vytvoříte svůj vlastní blend (1 cl), který si s&nbsp;personalizovanou etiketou odnesete domů.</li>
+    </ul>
+    <p>
+        The Blend je ideální příležitost, jak strávit večer s&nbsp;přáteli. Nebo se může stát nápaditým darem obchodnímu
+        partnerovi. Vyberte si termín a&nbsp;těšte se na&nbsp;jedinečný večerní program se zážitkovým objevováním tajů blended
+        whisky. Vstupenky zakoupíte přes <a href="https://goout.net/cs/umelci/the-blend/atgwf/" target="_blank">Goout.cz</a>.
+    </p>
+    <p>
+        Cena vstupenky je <strong>1 299 Kč</strong>.
+    </p>
+
+</div>
+
+<section class="city mb-30" n:foreach="$cities['classic'] as $cityName">
+    <h3 class="cont cont-s">
+        {$cityName}
+    </h3>
+    <ul class="cont cont-m">
+        {foreach $events['classic'] as $e}
+            {continueIf $cityName != $e->city}
+            <li>
+                <span>{$e->event_date->format('j.n.y')}</span>
+                <span title="{$e->address}">{$e->venue_name}</span>
+                <br>
+                <a n:class="$e->soldout ? soldout, tickets" {if $e->soldout || !$e->link_goout}title="Momentálně nedostupné"{/if} target="_blank" href="{if $e->link_goout}{$e->link_goout}{else}javascript:void(0){/if}">Info&nbsp;&amp;&nbsp;vstupenky&nbsp;&gt;</a>
+            </li>
+        {/foreach}
+    </ul>
+</section>
+
+{*<div id="win-the-right-way">
+    <div class="cont cont-s">
+        <h2>
+            Win The Right Way
+        </h2>
+    </div>
+    <div class="cont cont-s">
+        <p>
+            Vzdáváme hold všem, kteří za&nbsp;vítězstvím šli společně a&nbsp;podělili se&nbsp;o&nbsp;místo na&nbsp;vrcholu.
+            Vzdáváme hold všem gentlemanům, kteří hrají a&nbsp;vyhrávají tím správným způsobem. Chivas zvedá
+            sklenku k&nbsp;poctě všem, kteří prokázali výjimečné úsilí a&nbsp;uspěli.
+        </p>
+    </div>
+    <div class="cont cont-s thin-full">
+        <iframe width="800" height="544" src="https://www.youtube.com/embed/I2wGZV5gZzk?autoplay=0" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+</div>*}
+
+<div id="reference" class="pt-50">
+    <div class="cont cont-s">
+        <h2>
+            Reference
+        </h2>
+    </div>
+    <div class="cont cont-s">
+
+        <blockquote>
+            <cite>„Hravé, edukativní, skvělý zážitek i&nbsp;pro&nbsp;dámy. Míchání whisky je&nbsp;zábavné.“</cite>
+            <i>Mirka Kverková, prezidentka Ladies Whisky Club</i>
+        </blockquote>
+
+        <blockquote>
+            <cite>„Na&nbsp;zážitku The Blend jsem byl&nbsp;již dvakrát. Velmi zábavnou formou člověk získá spoustu informací o
+                práci master blenderů. Dozví se&nbsp;víc o&nbsp;jednotlivých whisky, ze&nbsp;kterých je&nbsp;blend, o&nbsp;vlivu každé z&nbsp;nich na
+                výsledný produkt. Když&nbsp;si pak sám vyzkouší svůj blend, může si hrát s&nbsp;poměry, chutí, určitě odchází
+                spokojený a&nbsp;plný nejenom zážitků. Skvělý počin.“</cite>
+            <i>Tomáš Pavlůsek, provozovatel čerpacích stanic Shell</i>
+        </blockquote>
+
+        <blockquote>
+            <cite>„Fantastická směs poznání, zábavy i&nbsp;samotné práce. Večer, který&nbsp;stojí za&nbsp;zopakování.“</cite>
+            <i>Petr Gavlík, restaurace Entrée</i>
+        </blockquote>
+
+        <blockquote>
+            <cite>„Velmi povedený koncept, který&nbsp;umí zábavnou formou podat začátečníkům informace o&nbsp;whisky, palírnách,
+                historii a&nbsp;o&nbsp;míchání whisky, díky kterému se&nbsp;tento nápoj stal celosvětovým fenoménem. Zároveň si ale
+                užijí i&nbsp;zkušenější znalci a&nbsp;mohou prověřit svoje schopnosti při&nbsp;míchání ideálního vlastního blendu.
+                Skvělá akce, kterou lze navštěvovat i&nbsp;opakovaně a&nbsp;pokaždé bude jiná.“</cite>
+            <i>Jiří Šinogl, podcast Whisky Essence</i>
+        </blockquote>
+
+    </div>
+</div>
+
+
+
+<div id="the-blend-na-klic">
+    <div class="cont cont-s">
+        <h2>
+            The Blend na klíč
+        </h2>
+    </div>
+    <div class="cont cont-s">
+        <img src="{$basePath}/images/b2b-screen.jpg" style="max-width: 100%;">
+        <p>
+            Hledáte neotřelý a&nbsp;skutečně prémiový zážitek pro své významné klienty či originální teambuildingovou aktivitu pro své kolegy a&nbsp;kolegyně? Pozvěte je na&nbsp;<strong><a n:href="b2b">workshop&nbsp;The&nbsp;Blend</a></strong>.
+            <br>
+            Možná si říkáte, že téma whisky nemůže být zábavné a&nbsp;atraktivní pro&nbsp;každého. Dovolte nám ujistit Vás, že&nbsp;ano!<br>
+        </p>
+        <a n:href="b2b" class="btn eshop-btn">Zjistit více</a>
+    </div>
+</div>
+
+
+<div id="kaligrafie">
+    <div class="cont cont-s">
+        <h2>
+            Kaligrafie &mdash; ručně psaný vzkaz
+        </h2>
+    </div>
+    <div class="cont cont-s thin-full">
+        <a href="https://www.prestigeselection.cz/pecet_vzkaz_stuzka/pecet-a-vzkaz/" target="_blank">
+            {*            <img src="{$basePath}/images/CHIVAS-TheBlend-PLbanner.png" class="desktop-version" alt="">*}
+            <img src="{$basePath}/images/TheBlend_web_Kaligrafie.jpg" alt="" style="max-width: 100%">
+        </a>
+    </div>
+    <div class="cont cont-s">
+        <p>
+            <strong>
+                Darujte <a href="https://www.prestigeselection.cz/pecet_vzkaz_stuzka/pecet-a-vzkaz/" target="_blank">jedinečnou lahev alkoholu</a> s&nbsp;ručně psaným vzkazem
+                na&nbsp;zapečetěné stužce od profesionální kaligrafky, která na&nbsp;vybrané lahve prémiové blended whisky Chivas Regal přenese váš&nbsp;osobní vzkaz.
+            </strong>
+        </p>
+
+        {*
+        <p>
+            Přátelství vytváří mix společných zážitků a&nbsp;stejně jako kvalitní whisky zraje s&nbsp;léty. Vzdejte hold
+            svým přátelům nebo obchodním partnerům a&nbsp;darujte jim gravírovanou láhev Chivas Regal 12yo nebo 18yo.
+            <br>
+            <br>
+            Postup je&nbsp;jednoduchý – vyberte láhev a&nbsp;připište text, který&nbsp;láhev ponese. V&nbsp;dalším kroku
+            si nápis zkontrolujete na&nbsp;obrazovém náhledu a&nbsp;za&nbsp;několik dní budete láhev držet
+            v&nbsp;ruce – ať už si ji necháte poslat, nebo si ji vyzvednete.
+        </p>
+
+        <!-- Order buttons -->
+        <a href="https://www.prestigeselection.cz/gravirovani/chivas-regal-12yo-700ml-krabicka/" target="_blank" class="btn eshop-btn">
+            Chivas 12yo
+        </a>
+        <a href="https://www.prestigeselection.cz/gravirovani/chivas-regal-18yo/" target="_blank" class="btn eshop-btn">
+            Chivas 18yo
+        </a>
+        *}
+    </div>
+</div>
+
+{include ../components/footer.latte}

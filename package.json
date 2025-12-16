@@ -1,0 +1,29 @@
+{
+  "name": "jameson-sv-patrik-2017",
+  "version": "1.0.0",
+  "description": "build items for grunt",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:mlezitom/chivas-blend.git"
+  },
+  "author": "Tomas Mleziva",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

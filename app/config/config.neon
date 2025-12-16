@@ -1,0 +1,46 @@
+#
+# WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# https://nette.org/security-warning
+#
+parameters:
+	ageControl:
+		cookieName: ageControlPassed
+	goout:
+		#feedUrl: 'https://goout.net/api/event/list?performer=2301100&source=chivas.cz&unapproved=true&language=cs'
+		feedUrl: 'https://goout.net/services/feeder/v1/events.json?performer=2301100&source=chivas.cz&unapproved=true&language=cs'
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+#extensions:
+#	httpAuth: HttpAuthExtension\HttpAuthExtension
+
+#httpAuth:
+#	username: chivas
+#	password: blnd112017
+#	title: 'Chivas - The Blend DEV'
+
+database:
+	dsn: 'mysql:host=127.0.0.1;dbname=chivas_blend'
+	user: root
+	password: root
+	options:
+		lazy: yes
+
+
+services:
+	- App\Model\UserManager
+	- App\Forms\FormFactory
+	- App\Forms\SignInFormFactory
+	- App\Forms\SignUpFormFactory
+	- App\Model\Events
+	- App\Model\Venues
+	- App\Services\GooutApiLoader(feedUrl: %goout.feedUrl%)
+	- Nette\Caching\Cache
+	router: App\RouterFactory::createRouter

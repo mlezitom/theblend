@@ -1,0 +1,28 @@
+<div id="age-control" n:if="$showAgeControl">
+    <div class="age-control-panel">
+        <img src="{$basePath}/images/WOW-png-transparentBROWN.png" alt="The Blend by Chivas" style="max-width: 35%">
+        <p>
+            Vítejte na&nbsp;stránce TheBlend.cz,
+        </p>
+        <p>
+            na&nbsp;které&nbsp;se&nbsp;můžete seznámit s&nbsp;obsahem workshopů The Blend – namíchejte si svou skotskou whisky&nbsp;a&nbsp;přehledem termínů s&nbsp;možností nákupu vstupenek.
+        </p>
+        <p>
+            Obsah publikovaný na&nbsp;této stránce je&nbsp;určený pouze osobám starším 18 let.
+        </p>
+        <p><strong>Jste starší 18 let?</strong></p>
+        <a class="jsAgeControlAgree" n:href="agree!">Ano</a>
+        <a href="http://pijsrozumem.cz">Ne</a>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $('.jsAgeControlAgree').on('click', function(e) {
+            var lnk = $(this).attr('href');
+            $.get(lnk);
+            $('#age-control').fadeOut();
+            e.preventDefault();
+            return false;
+        });
+    })
+</script>

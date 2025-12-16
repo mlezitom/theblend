@@ -1,0 +1,28 @@
+{
+	"name": "mlezitom/the-blend",
+	"description": "The blend site",
+	"homepage": "https://theblend.cz",
+	"type": "project",
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Tomas Mleziva",
+			"homepage": "https://github.org/mlezitom"
+		}
+	],
+	"require": {
+		"php": ">=8.3",
+		"nette/nette": "^3.2",
+		"ublaboo/datagrid": "^6.9",
+		"uestla/http-auth-extension": "*"
+	},
+	"require-dev": {
+		"nette/tester": "^2.0"
+	},
+	"minimum-stability": "stable",
+	"config": {
+		"platform": {
+			"php": "8.3"
+		}
+	}
+}

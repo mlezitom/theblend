@@ -1,0 +1,122 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Chivas: The Blend</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="{$basePath}/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="{$basePath}/css/chivas.css?v={date('YmdH')}">
+	<link rel="stylesheet" href="{$basePath}/css/hp-2025.css?v={date('YmdH')}">
+	{block head}{/block}
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({ 'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MK69RQQ');</script>
+	<!-- End Google Tag Manager -->
+
+	<meta property="og:title" content="The Blend">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{plink //this}">
+	<meta property="og:image" content="{plink //this}{$basePath}/images/CHIVAS-The_Blend_OGfb.png">
+	<meta property="og:description" content="The Blend - Užijte si příjemné chvíle na zážitkovém programu The Blend a ponořte se do fascinujícího světa whisky.">
+	<STYLE>
+		blockquote {
+			font-size: 3.4rem;
+			line-height: 1.20em;
+			padding: .8em 0;
+		}
+		blockquote cite {
+			font-style: italic;
+			text-align: justify;
+			display: block;
+		}
+		blockquote i {
+			text-align: right;
+			display: block;
+			font-size: 2.6rem;
+		}
+		.btn-b2b {
+			font-size: 70%;
+			color: #fff !important;
+		}
+	</STYLE>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK69RQQ"
+					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+				{ if(f.fbq)return;n=f.fbq=function(){ n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+				if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+				n.queue=[];t=b.createElement(e);t.async=!0;
+				t.src=v;s=b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t,s)}(window, document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '953545810175832');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=953545810175832&ev=PageView&noscript=1"/>
+	</noscript>
+	<!-- End Meta Pixel Code -->
+
+	{control ageControl}
+
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+	<nav id="menu" style="display: none">
+		<a class="close" href="javascript:void(0)">×</a>
+		<ul>
+			<li>
+				<a href="#the-blend" class="smooth-scroll">The Blend</a>
+			</li>
+			<li>
+				<a href="#program" class="smooth-scroll">Program</a>
+			</li>
+{*			<li>*}
+{*				<a href="#win-the-right-way" class="smooth-scroll">Win The Right Way</a>*}
+{*			</li>*}
+			<li>
+				<a href="#reference" class="smooth-scroll">Reference</a>
+			</li>
+			<li>
+				<a href="{*#the-blend-na-klic*}{plink b2b}" class="smooth-scroll">The Blend na klíč</a>
+			</li>
+			<li>
+				<a href="#kaligrafie" class="smooth-scroll">Kaligrafie - ručně psaný vzkaz</a>
+			</li>
+			<li>
+				<a href="mailto:info@theblend.cz">info@theblend.cz</a>
+			</li>
+		</ul>
+	</nav>
+	<main id="panel" class="{include #pageClass}">
+		<div class="cont cont-l">
+			<div id="top-nav">
+				<a n:href="default" {if isLinkCurrent('default')} class="current" {/if}>THE&nbsp;BLEND <br>pro&nbsp;VEŘEJNOST</a>
+				<a n:href="b2b" {if isLinkCurrent('b2b')} class="current" {/if}>THE&nbsp;BLEND <br>na&nbsp;KLÍČ</a>
+			</div>
+		</div>
+		{include content}
+	</main>
+
+	{block scripts}
+	<script src="{$basePath}/build/chivas.js"></script>
+	{/block}
+</body>
+</html>

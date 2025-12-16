@@ -1,0 +1,29 @@
+{
+  "name": "jameson-sv-patrik-2017",
+  "description": "build items for grunt",
+  "main": "index.js",
+  "authors": [
+    "Tomas Mleziva"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "http://www.jamesonsvpatrik.cz",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "slick-carousel": "slick.js#^1.6.0",
+    "nette-forms": "^2.4.6",
+    "font-awesome": "^4.7.0",
+    "bootstrap-datepicker": "^1.7.1",
+    "slideout.js": "https://github.com/mango/slideout.git#^1.0.1"
+  }
+}
