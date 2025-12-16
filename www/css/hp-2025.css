@@ -374,7 +374,7 @@
 
 .hp-2025 #section-about-blend .cont > div:first-child {
   flex: 0 0 60%;
-  max-width: 60%;
+  max-width: 52%;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
@@ -403,6 +403,12 @@
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1420px) {
+  .hp-2025 #section-about-blend .cont > div:first-child {
+    padding: 60px 20px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
