@@ -325,14 +325,18 @@
     flex-basis: auto;
   }
 
+  .hp-2025 #section-xmas-voucher > div > div:last-child {
+    padding: 0 20px;
+  }
+
   .hp-2025 #section-xmas-voucher h2,
   .hp-2025 #section-xmas-voucher p {
     text-align: center;
   }
 
   .hp-2025 #section-xmas-voucher .eshop-btn {
-    width: 100%;
-    max-width: 520px;
+    width: auto;
+    max-width: 100%;
   }
 }
 
