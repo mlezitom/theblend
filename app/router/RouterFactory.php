@@ -19,6 +19,7 @@ class RouterFactory
 		$router = new RouteList;
 		$router[] = new Route('import', 'Homepage:import');
 		$router[] = new Route('b2b', 'Homepage:b2b');
+		$router[] = new Route('basic', 'Homepage:basic');
 		$router[] = new Route('2025', 'Homepage:2025');
 		$router[] = new Route('<presenter>/<action>', 'Homepage:default');
 		return $router;

@@ -27,7 +27,7 @@ class HomepagePresenter extends BasePresenter
      */
 	public $eventsModel;
 
-	public function renderDefault()
+	public function renderBasic()
 	{
 	    //$this->cacheLoadEvents();
 	    $events = $this->eventsModel->getEventsForHomepage();
@@ -49,9 +49,9 @@ class HomepagePresenter extends BasePresenter
         ];
 	}
 
-	public function render2025()
+	public function renderDefault()
 	{
-
+        $this->setView('2025');
 	}
 
 	public function actionImport()
