@@ -650,3 +650,33 @@
   }
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Voucher Info List */
+.hp-2025 #section-xmas-voucher .voucher-info {
+  list-style: circle;
+  padding: 0;
+  margin: 0 auto 30px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+}
+
+.hp-2025 #section-xmas-voucher .voucher-info li {
+  font-size: 3.0rem;
+  line-height: 1.4em;
+  margin: 0 0 16px 0;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  padding-left: 1.5em;
+  list-style-position: outside;
+}
+
+.hp-2025 #section-xmas-voucher .voucher-info li:last-child {
+  margin-bottom: 0;
+}
